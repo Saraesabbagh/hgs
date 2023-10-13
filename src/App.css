@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .hero-container{
   height: 100vh; /* Set the hero section to take 100% of the viewport height */
   background: url('./images/hero.jpg') center/cover no-repeat; /* Set background properties */
@@ -8,10 +11,20 @@
   color: #fff;
 }
 .nav-container{
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
+  background: transparent;
+  transition: background  0.3s ease;
+}
+.nav-container a {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  color: #E6FB4F;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
 }
 nav ul {
   list-style: none;
@@ -43,44 +56,51 @@ justify-content: center;
 }
 .about-container{
   background: #505F4C;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 .about-title{
-  font-size: 30px;
-  padding: 30px;
-  margin: 0;
-  margin-left: 10px;
+  font-size: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   color: #B5BAB1;
   text-align: left;
   font-family: Rosarivo;
-  font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-
-.about-content {
-  display: flex;
-  align-items: flex-start; 
+.about-text {
+  flex-basis: 40%; /* Text content takes up 50% of the container */
+  padding: 20px;
+  box-sizing: border-box;
   margin-left: 40px;
-  margin-right: 40px;
-  padding-bottom: 40px;
   color: #B5BAB1;
+  line-height: 30px;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.about-content img {
-  width: 400px;
-  height: auto;
-  margin-right: 20px; /* Add some spacing between the image and text */
+.about-image {
+  flex-basis: 40%; /* Image takes up 50% of the container */
+  box-sizing: border-box;
+  align-self: center;
+  justify-self: center;
+  margin-left: 20px;
+  padding: 20px;
+  margin-right: 80px;
 }
-
 .come-explore-container{
-  height: 50vh; /* Set the hero section to take 100% of the viewport height */
+  height: 60vh; /* Set the hero section to take 100% of the viewport height */
   background: url('./images/comeexplore.jpg') center/cover no-repeat; /* Set background properties */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
+  flex-wrap: wrap;
 }
 
 .come-explore-title{
@@ -92,64 +112,110 @@ font-style: normal;
 font-weight: 400;
 line-height: 0px; 
 justify-content: center;
+padding-left: 15px;
 }
-
 .donate-container{
   background: #707E74;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
 }
 .donate-title{
-  font-size: 30px;
-  padding: 30px;
-  margin: 0;
-  margin-left: 425px;
+  font-size: 50px;
+  margin: 20px 5px 10px 0px;
   color: #E6FB4F;
   text-align: left;
   font-family: Rosarivo;
-  font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.donate-content {
-  display: flex;
-  align-items: flex-start; 
-  margin-left: 40px;
-  margin-right: 40px;
-  padding-bottom: 40px;
+.donate-subtitle{
+  font-size: 20px;
   color: #E6FB4F;
+  text-align: left;
+  font-family: Rosarivo;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.donate-content img {
-  width: 400px;
-  height: auto;
-  margin-right: 20px; /* Add some spacing between the image and text */
+.donate-text {
+  flex-basis: 50%; /* Text content takes up 50% of the container */
+  box-sizing: border-box;
+  color: #E6FB4F;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 30px;
+  
 }
+
+.donate-image {
+  flex-basis: 45%; /* Image takes up 50% of the container */
+  box-sizing: border-box;
+  align-self: center;
+  justify-self: center;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+
+
+
+
 .volunteer-container{
   background: #505F4C;
+  display: flex;
+  flex-direction: row;
+  padding-top:20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 .volunteer-title{
-  font-size: 30px;
-  padding: 30px;
-  margin: 0;
-  margin-left: 425px;
+  font-size: 50px;
+  margin: 20px 5px 10px 0px;
   color: #B5BAB1;
   text-align: left;
   font-family: Rosarivo;
-  font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.volunteer-text {
+  flex-basis: 50%; /* Text content takes up 50% of the container */
+  padding: 20px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  color: #B5BAB1;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 30px;
+  margin-left: 40px;
+  
+}
+.volunteer-paragraphs{
+  padding-top: 20px;
+}
+
+.volunteer-image {
+  flex-basis: 40%; /* Image takes up 50% of the container */
+  box-sizing: border-box;
+  margin-left: 20px;
+  padding: 20px;
 }
 
 .volunteer-content {
   display: flex;
   align-items: flex-start; 
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  
   margin-left: 40px;
   margin-right: 40px;
   padding-bottom: 40px;
-  color: #B5BAB1;
+
 }
 
 .volunteer-content img {
@@ -159,7 +225,7 @@ justify-content: center;
 }
 
 .lovehgs-container{
-  height: 50vh; /* Set the hero section to take 100% of the viewport height */
+  height: 80vh; /* Set the hero section to take 100% of the viewport height */
   background: url('./images/lovehgs.jpg') center/cover no-repeat; /* Set background properties */
   display: flex;
   justify-content: center;
@@ -180,28 +246,48 @@ justify-content: center;
 }
 
 .contact-title{
-  color: #E6FB4F;
+color: #E6FB4F;
 text-align: left;
 font-family: Rosarivo;
-font-size: 48px;
+font-size: 88px;
 font-style: normal;
 font-weight: 400;
 line-height: 0px; 
 justify-content: left;
+white-space: nowrap; /* Prevent text from wrapping onto multiple lines */
+word-wrap: break-word
+
 }
 
-.contact-email{
-  margin: 0;
-  padding-top: 150px;
-  margin-bottom: 200px;
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 
-.contact-container{
+.contact-container {
   background: #707E74;
-  height: 400px;
-  margin: 0;
-  padding-left: 40px;
-  padding-bottom: 30px;
-
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px; /* Add padding as needed */
 }
+
+.contact-info {
+  flex-basis: calc(40% - 20px); /* Set the width of the left column (subtracting padding) */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.contact-social {
+  flex-basis: calc(40% - 20px); /* Set the width of the right column (subtracting padding) */
+  padding: 10px;
+  padding-top: 60px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  justify-items: flex-start;
+  text-align: left;
+  font-size: medium;
+  line-height: 55px;
+  color: #E6FB4F;
+}
+
+
