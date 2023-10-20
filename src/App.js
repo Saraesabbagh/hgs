@@ -2,46 +2,33 @@ import "./App.css";
 import bench from "./images/bench.jpg";
 import donate from "./images/donate.jpg";
 import volunteer from "./images/volunteer.jpg";
+import rosesmell from "./images/rosesmell.png";
+import NavBar from "./NavBar";
+import VideoComponent from "./Video";
 
 function App() {
-  const navContainer = document.querySelector(".nav-container");
+  // const navContainer = document.querySelector(".nav-container");
 
-  // Add a scroll event listener to the window
-  window.addEventListener("scroll", () => {
-    // Get the current scroll position
-    const scrollY = window.scrollY;
+  // // Add a scroll event listener to the window
+  // window.addEventListener("scroll", () => {
+  //   // Get the current scroll position
+  //   const scrollY = window.scrollY;
 
-    // Set a threshold value for the scroll position (adjust as needed)
-    const scrollThreshold = 100;
+  //   // Set a threshold value for the scroll position (adjust as needed)
+  //   const scrollThreshold = 100;
 
-    // Calculate the opacity based on the scroll position
-    const opacity = Math.min(scrollY / scrollThreshold, 0.5);
+  //   // Calculate the opacity based on the scroll position
+  //   const opacity = Math.min(scrollY / scrollThreshold, 0.5);
 
-    // Set the background color to translucent white
-    navContainer.style.background = `rgba(255, 255, 255, ${opacity})`;
-  });
+  //   // Set the background color to translucent white
+  //   navContainer.style.background = `rgba(255, 255, 255, ${opacity})`;
+  // });
+
   return (
     <div className="App">
       <div className="hero-container">
         <div className="nav-container">
-          <nav>
-            <span>
-              <ul>
-                <li>
-                  <a href="#donate">Donate</a>
-                </li>
-                <li>
-                  <a href="#about">About</a>
-                </li>
-                <li>
-                  <a href="#volunteer">Tea Parties</a>
-                </li>
-                <li>
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
-            </span>
-          </nav>
+          <NavBar />
         </div>
 
         <div className="hero-content">
@@ -52,10 +39,13 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="video-container">
+        <VideoComponent />
+      </div>
       <div id="donate" className="donate-container">
         <div className="donate-image">
           <img
-            src={donate}
+            src={rosesmell}
             alt="bench in garden"
             style={{ width: "100%", height: "auto" }}
           />

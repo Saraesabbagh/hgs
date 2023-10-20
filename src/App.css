@@ -54,6 +54,11 @@ font-weight: 400;
 line-height: 0px; 
 justify-content: center;
 }
+
+.video-container{
+  background: #505F4C;
+  padding: 15px;
+}
 .about-container{
   background: #505F4C;
   display: flex;
@@ -280,13 +285,13 @@ word-wrap: break-word
 .contact-social {
   flex-basis: calc(40% - 20px); /* Set the width of the right column (subtracting padding) */
   padding: 10px;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-right: 40px;
   box-sizing: border-box;
   justify-items: flex-start;
   text-align: left;
   font-size: medium;
-  line-height: 55px;
+  line-height: 20px;
   color: #E6FB4F;
 }
 
