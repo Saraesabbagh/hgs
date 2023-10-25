@@ -5,10 +5,13 @@ html {
   height: 100vh; /* Set the hero section to take 100% of the viewport height */
   background: url('./images/hero.jpg') center/cover no-repeat; /* Set background properties */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
+
+  
 }
 .nav-container{
   position: fixed;
@@ -250,41 +253,31 @@ line-height: 0px;
 justify-content: center;
 }
 
-.contact-title{
-color: #E6FB4F;
-text-align: left;
-font-family: Rosarivo;
-font-size: 88px;
-font-style: normal;
-font-weight: 400;
-line-height: 0px; 
-justify-content: left;
-white-space: nowrap; /* Prevent text from wrapping onto multiple lines */
-word-wrap: break-word
-
-}
-
-
 .contact-container {
   background: #707E74;
-  height: 300px;
+  height: 400px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 20px; /* Add padding as needed */
+  padding: 20px;
 }
 
-.contact-info {
-  flex-basis: calc(40% - 20px); /* Set the width of the left column (subtracting padding) */
-  padding: 10px;
-  box-sizing: border-box;
+.contact-title {
+  font-size: 88px;
+  margin: 20px 5px 10px 0px;
+  color: #E6FB4F;
+  text-align: left;
+  font-family: Rosarivo;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.contact-social {
-  flex-basis: calc(40% - 20px); /* Set the width of the right column (subtracting padding) */
+.contact-text {
   padding: 10px;
+  background: #707E74;
   padding-top: 30px;
   padding-right: 40px;
   box-sizing: border-box;
@@ -293,6 +286,92 @@ word-wrap: break-word
   font-size: medium;
   line-height: 20px;
   color: #E6FB4F;
+  flex-basis: 50%; /* Text content takes up 50% of the container */
+  padding: 20px;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  
 }
+
+
+/* @media (min-width:768px) {
+  .hero-container,
+  .donate-container,
+  .about-container,
+  .volunteer-container,
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+} */
+
+
+@media (max-width: 400px) {
+  .hero-container,
+  .donate-container,
+  .about-container,
+  .volunteer-container,
+  .lovehgs-container, 
+   h3, h5, h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: none;
+    margin: none;
+  }
+  .about-title, .volunteer-text,
+  .about-text{
+    padding: 20px; /* Remove padding */
+    margin: 0; /* Remove margin */
+    text-align: center; /* Center the text */
+  }
+  
+  .about-text {
+    margin-left: 0; /* Remove left margin for .about-text */
+  }
+  .about-image,.volunteer-image {
+    flex-basis: 80%; /* Full width on small screens */
+    margin: 0; /* Remove margin */
+    padding: 20px; /* Remove padding */
+    text-align: center; /* Center the image */
+  }
+
+  .contact-title-container {
+    flex-basis: 100%; /* Full width for the container */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+  }
+  .contact-title {
+    font-size: 40px;
+    margin: 0; /* Remove margin */
+  }
+  
+  .contact-text {
+    background: #707E74;
+    box-sizing: border-box;
+    justify-items: center;
+    text-align: center;
+    font-size: medium;
+    line-height: 20px;
+    color: #E6FB4F;
+    padding-left: 95px;
+    flex-basis: 80%; /* Full width on small screens */
+    margin: 0; /* Remove margin */
+    /* padding: 20px; Remove padding */
+  }
+
+  .contact-text a{
+    color: #E6FB4F;
+    text-align:center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+ 
+  
+}
+
 
 

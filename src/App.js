@@ -1,29 +1,11 @@
 import "./App.css";
 import bench from "./images/bench.jpg";
-import donate from "./images/donate.jpg";
 import volunteer from "./images/volunteer.jpg";
 import rosesmell from "./images/rosesmell.png";
 import NavBar from "./NavBar";
 import VideoComponent from "./Video";
 
 function App() {
-  // const navContainer = document.querySelector(".nav-container");
-
-  // // Add a scroll event listener to the window
-  // window.addEventListener("scroll", () => {
-  //   // Get the current scroll position
-  //   const scrollY = window.scrollY;
-
-  //   // Set a threshold value for the scroll position (adjust as needed)
-  //   const scrollThreshold = 100;
-
-  //   // Calculate the opacity based on the scroll position
-  //   const opacity = Math.min(scrollY / scrollThreshold, 0.5);
-
-  //   // Set the background color to translucent white
-  //   navContainer.style.background = `rgba(255, 255, 255, ${opacity})`;
-  // });
-
   return (
     <div className="App">
       <div className="hero-container">
@@ -35,7 +17,8 @@ function App() {
           <h4>Welcome To</h4>
           <div className="hero-title">
             <h1>HGS</h1>
-            <h2>Rose Garden</h2>
+            <h2>Rose</h2>
+            <h2>Garden</h2>
           </div>
         </div>
       </div>
@@ -125,15 +108,16 @@ function App() {
         </div>
       </div>
       <div className="lovehgs-container">
-        <h2 className="lovehgs-title">Love HGS</h2>
+        <h2 className="lovehgs-title">Love </h2>
+        <h2 className="lovehgs-title">HGS</h2>
       </div>
       <div id="contact" className="contact-container">
-        <div className="contact-info">
+        <div className="contact-title-container">
           <h2 className="contact-title">Keep up </h2>
           <h2 className="contact-title">to date on </h2>
           <h2 className="contact-title"> Facebook</h2>
         </div>
-        <div className="contact-social">
+        <div className="contact-text">
           <a
             className="contact-social"
             href="https://www.facebook.com/groups/337257630584408"
