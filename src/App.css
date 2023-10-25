@@ -334,6 +334,10 @@ justify-content: center;
     padding: none;
     margin: none;
   }
+
+  .hero-title{
+    font-family: Rosarivo;
+  }
   .about-title, .volunteer-text,
   .about-text{
     padding: 20px; /* Remove padding */
