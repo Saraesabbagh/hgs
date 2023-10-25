@@ -232,6 +232,12 @@ padding-left: 15px;
   margin-right: 20px; /* Add some spacing between the image and text */
 }
 
+.photo-container{
+  background: #707E74;
+  padding: 20px;
+ 
+}
+
 .lovehgs-container{
   height: 80vh; /* Set the hero section to take 100% of the viewport height */
   background: url('./images/lovehgs.jpg') center/cover no-repeat; /* Set background properties */
@@ -291,6 +297,12 @@ justify-content: center;
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   
   
+}
+
+.contact-text a{
+  color: #E6FB4F;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 

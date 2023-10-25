@@ -1,6 +1,9 @@
 import "./App.css";
 import bench from "./images/bench.jpg";
-import volunteer from "./images/volunteer.jpg";
+import teaparty from "./images/tea_party.jpeg";
+import visitors from "./images/visitors.JPG";
+import mayor from "./images/mayor.JPG";
+// import volunteer from "./images/volunteer.jpg";
 import rosesmell from "./images/rosesmell.png";
 import NavBar from "./NavBar";
 import VideoComponent from "./Video";
@@ -18,7 +21,7 @@ function App() {
           <div className="hero-title">
             <h1>HGS</h1>
             <h2>Rose</h2>
-            <h2>Garden</h2>
+            <h2>Gardens</h2>
           </div>
         </div>
       </div>
@@ -46,11 +49,12 @@ function App() {
             NATWEST Account: 66631904
             <br />
             Sort: 51 - 50 -11
+            <br />
             <br />A Cheque can also be sent to;
             <br />
             NGO c/o 69 Brookland Rise NW11 6DT
             <br />
-            0208 458 5313
+            07956389595
             <br />
             ingrambluebird@hotmail.com
           </p>
@@ -90,8 +94,8 @@ function App() {
               socialize.
             </p>
             <p>
-              Wednesday is a community Tea Morning in Romeo and Juliet Cafe in
-              the Market Place.
+              Every Wednesday is a community Tea Morning in Romeo and Juliet
+              Cafe in the Market Place.
             </p>
             <p>
               We have also had parties for dogs and children's birthdays and for
@@ -101,11 +105,23 @@ function App() {
         </div>
         <div className="volunteer-image">
           <img
-            src={volunteer}
+            src={teaparty}
             alt="bench in garden"
             style={{ width: "100%", height: "auto" }}
           />
         </div>
+      </div>
+      <div className="photo-container">
+        <img
+          src={mayor}
+          alt="bench in garden"
+          style={{ width: "50%", height: "auto" }}
+        />
+        <img
+          src={visitors}
+          alt="bench in garden"
+          style={{ width: "50%", height: "auto" }}
+        />
       </div>
       <div className="lovehgs-container">
         <h2 className="lovehgs-title">Love </h2>
